@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@font-face {
+  font-family: "Share Tech";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/ShareTech-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Krisha";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Krisha-Regular.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 1);
+  font-family: "Krisha", "Share Tech", "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Share Tech";
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+body {
+  background-image: url("/assets/svg/bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Bg txt */
+
+.container_slide_text {
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  max-width: 1452px;
+  left: -8px;
+  font-family: "Krisha";
+  font-size: 450px;
+  top: -10px;
+}
+
+.text {
+  white-space: nowrap;
+  animation: scrollTxt 30s linear infinite;
+}
+
+@keyframes scrollTxt {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+/* Header */
+
+header {
+  width: 1360px;
+  height: 20px;
+  margin: 40px 44px 48px;
+  display: flex;
+  white-space: nowrap;
+  position: relative;
+}
+
+.hero_cta {
+  margin-left: 396px;
+}
+
+.hero_cta a:nth-child(1) {
+  margin-right: 96px;
+}
+.hero_cta a:nth-child(2) {
+  margin-right: 96px;
+}
+
+.hero_ticket_button {
+  margin-left: 352px;
+}
+.hero_ticket_button img {
+  padding: 3px 8px;
+}
+
+/* Main section */
+
+.main_pic img#girl {
+  width: 350px;
+  cursor: pointer;
+}
+
+.main_pic img {
+  width: 190px;
+  margin-left: 16px;
+}
+
+.main_pic {
+  max-width: 575px;
+  position: relative;
+  top: 200px;
+  left: 176px;
+}
